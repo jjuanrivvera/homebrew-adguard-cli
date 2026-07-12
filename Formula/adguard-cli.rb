@@ -5,21 +5,21 @@
 class AdguardCli < Formula
   desc "The missing command-line interface for AdGuard Home"
   homepage "https://github.com/jjuanrivvera/adguard-cli"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jjuanrivvera/adguard-cli/releases/download/v0.2.2/adguard-cli_0.2.2_darwin_amd64.tar.gz"
-      sha256 "277322a51f88fdd57d76c65ffdb2797e47169ca5837d1729d1c90263563f1526"
+      url "https://github.com/jjuanrivvera/adguard-cli/releases/download/v0.2.3/adguard-cli_0.2.3_darwin_amd64.tar.gz"
+      sha256 "fd6d5849a766898ffccf351778f5dc3a7a9bf6bad70bb554e109beb1fe99c3be"
 
       define_method(:install) do
         bin.install "adguard-home"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jjuanrivvera/adguard-cli/releases/download/v0.2.2/adguard-cli_0.2.2_darwin_arm64.tar.gz"
-      sha256 "81f32851e579092d187515c8d198f21f0b2f53afc01a94c5a63638332384ca43"
+      url "https://github.com/jjuanrivvera/adguard-cli/releases/download/v0.2.3/adguard-cli_0.2.3_darwin_arm64.tar.gz"
+      sha256 "357376797c38031ae5998488e7a0efb01612c13308fc6e57f2ee1d2b82669a7e"
 
       define_method(:install) do
         bin.install "adguard-home"
@@ -29,15 +29,15 @@ class AdguardCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jjuanrivvera/adguard-cli/releases/download/v0.2.2/adguard-cli_0.2.2_linux_amd64.tar.gz"
-      sha256 "fd7c316463f8c92a6b8b517a4e8d132ced53b970a3eb2995dfe478d8af330f3e"
+      url "https://github.com/jjuanrivvera/adguard-cli/releases/download/v0.2.3/adguard-cli_0.2.3_linux_amd64.tar.gz"
+      sha256 "71eaa24c3c95014e1368686c64ab17f56ce8777344b0a7e9d8ca0040d172dfe4"
       define_method(:install) do
         bin.install "adguard-home"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jjuanrivvera/adguard-cli/releases/download/v0.2.2/adguard-cli_0.2.2_linux_arm64.tar.gz"
-      sha256 "72ee9c9fd30d1db2f4e948ab4d4bd293cd9a797b634e3efacc357ffee6f5638e"
+      url "https://github.com/jjuanrivvera/adguard-cli/releases/download/v0.2.3/adguard-cli_0.2.3_linux_arm64.tar.gz"
+      sha256 "45e6f712570408a06858baa3d833fe6784690684911c7a08a9e3f03631c12988"
       define_method(:install) do
         bin.install "adguard-home"
       end
